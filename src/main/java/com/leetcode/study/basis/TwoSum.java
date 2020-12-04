@@ -40,7 +40,7 @@ public class TwoSum {
      */
     public static int[] twoSum(int[] nums, int target) {
         String str = "-";
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length - 1; i++) {
             for (int j = i + 1; j < nums.length; j++) {
                 if (target == nums[i] + nums[j]) {
                     if (!str.contains("-" + i + "-")) {
@@ -69,7 +69,7 @@ public class TwoSum {
      */
     public static int[] twoSumTwo(int[] nums, int target) {
         Set<Integer> set = new HashSet<Integer>();
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length - 1; i++) {
             for (int j = i + 1; j < nums.length; j++) {
                 if (target == nums[i] + nums[j]) {
                     set.add(i);
@@ -95,7 +95,7 @@ public class TwoSum {
      */
     public static int[] twoSumThree(int[] nums, int target) {
         List<Integer> list = new ArrayList<Integer>();
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length - 1; i++) {
             for (int j = i + 1; j < nums.length; j++) {
                 if (target == nums[i] + nums[j]) {
                     if (!list.contains(i)) {
